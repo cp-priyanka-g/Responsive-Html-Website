@@ -1,6 +1,5 @@
 body {
   font-family: Karma, sans-serif;
-  weight: 400;
   font-size: 15px;
   line-height: 23px;
 }
@@ -10,16 +9,33 @@ h3 {
   width: 92%;
   margin: 10px 0;
 }
-
+ul {
+  list-style-type: none;
+  margin-left: -46px;
+}
 .center-align {
   display: flex;
   justify-content: center;
+}
+.desc-padding{
+  padding-top: 30px;
+  padding-bottom: 60px;
 }
 
 hr {
   border: 0;
   border-top: 1px solid #eee;
-  margin: 50px 0;
+  margin: 20px 0;
+}
+span{
+  background-color:#616161;
+  color: white;
+  font-size: 12px!important;
+  padding: 4px;
+}
+.footer-span{
+  background-color:black;
+  color: white;
 }
 
 .center-chef{
@@ -150,6 +166,8 @@ hr {
   width: 800px;
   height: 533px;
 }
-.para-text{
-  margin-top: 55%;
+.footer-icon{
+  width: 50px;
+    float: left;
+    margin: 7px;
 }
