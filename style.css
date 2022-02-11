@@ -9,17 +9,25 @@ h3 {
   width: 92%;
   margin: 10px 0;
 }
+
 ul {
   list-style-type: none;
   margin-left: -46px;
 }
+
 .center-align {
   display: flex;
   justify-content: center;
 }
-.desc-padding{
-  padding-top: 30px;
-  padding-bottom: 60px;
+
+.description-text-padding {
+
+  padding: 30px 32px 60px 32px;
+}
+
+.open-icon {
+  font-size: 30px;
+  padding: 28px;
 }
 
 hr {
@@ -27,18 +35,20 @@ hr {
   border-top: 1px solid #eee;
   margin: 20px 0;
 }
-span{
-  background-color:#616161;
+
+span {
+  background-color: #616161;
   color: white;
-  font-size: 12px!important;
+  font-size: 12px !important;
   padding: 4px;
 }
-.footer-span{
-  background-color:black;
+
+.footer-span {
+  background-color: black;
   color: white;
 }
 
-.center-chef{
+.center-chef {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -78,7 +88,6 @@ span{
   position: absolute;
   top: 0;
   font-size: 25px;
-  padding: 8px 8px 8px 32px;
 }
 
 .menu {
@@ -130,16 +139,15 @@ span{
   .sidenav {
     padding-top: 15px;
   }
+}
 
-  .sidenav a {
-    font-size: 18px;
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1000px;
   }
 }
 
-/* @media (min-width: 1200px) {
-    .container {
-      width: 1000px;
-    } */
 .pagination {
   display: inline-block;
 }
@@ -166,8 +174,34 @@ span{
   width: 800px;
   height: 533px;
 }
-.footer-icon{
+
+.footer-icon {
   width: 50px;
-    float: left;
-    margin: 7px;
+  float: left;
+  margin: 7px;
+}
+
+@media (min-width: 278.98px) and (max-width: 768px) {
+  
+  .food-row{
+    display: flex;
+    flex-flow: column;
+  }
+  .food-column{
+    padding: 10px;
+    width: 100%;
+  }
+  .footer-section {
+    padding: 20px;
+  }
+
+  .footer-padding {
+    padding-top: 16px;
+  }
+  .topnav{
+    display: flex;
+    flex-flow: row;
+    width: 115%;
+    justify-content: space-between;
+  }
 }
