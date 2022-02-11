@@ -20,7 +20,7 @@ ul {
   justify-content: center;
 }
 
-.description-text-padding {
+.description-text{
 
   padding: 30px 32px 60px 32px;
 }
@@ -142,11 +142,11 @@ span {
 }
 
 
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
   .container {
     width: 1000px;
-  }
-}
+  } */
+
 
 .pagination {
   display: inline-block;
@@ -195,7 +195,7 @@ span {
     padding: 20px;
   }
 
-  .footer-padding {
+  .footer-top{
     padding-top: 16px;
   }
   .topnav{
