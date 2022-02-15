@@ -1,5 +1,5 @@
 body {
-  font-family: Karma, sans-serif;
+  font-family: 'Karma', sans-serif;
   font-size: 15px;
   line-height: 23px;
 }
@@ -9,17 +9,30 @@ h3 {
   width: 92%;
   margin: 10px 0;
 }
+
 ul {
   list-style-type: none;
   margin-left: -46px;
 }
+
 .center-align {
   display: flex;
   justify-content: center;
 }
-.desc-padding{
-  padding-top: 30px;
-  padding-bottom: 60px;
+
+.right-align {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.description-text {
+
+  padding: 30px 32px 60px 32px;
+}
+
+.open-icon {
+  font-size: 30px;
+  padding: 28px;
 }
 
 hr {
@@ -27,18 +40,20 @@ hr {
   border-top: 1px solid #eee;
   margin: 20px 0;
 }
-span{
-  background-color:#616161;
+
+span {
+  background-color: #616161;
   color: white;
-  font-size: 12px!important;
+  font-size: 12px !important;
   padding: 4px;
 }
-.footer-span{
-  background-color:black;
+
+.footer-span {
+  background-color: black;
   color: white;
 }
 
-.center-chef{
+.center-chef {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -78,16 +93,14 @@ span{
   position: absolute;
   top: 0;
   font-size: 25px;
-  padding: 8px 8px 8px 32px;
 }
 
 .menu {
-  position: fixed;
-  width: 72%;
-  z-index: 1;
-  background-color: white;
-}
 
+  display: flex;
+  justify-content: space-between;
+
+}
 
 .food-row {
   padding: 4%;
@@ -123,23 +136,12 @@ span{
   line-height: 25px;
 }
 
-/* Clear floats after image containers */
-
-
 @media screen and (max-height: 450px) {
   .sidenav {
     padding-top: 15px;
   }
-
-  .sidenav a {
-    font-size: 18px;
-  }
 }
 
-/* @media (min-width: 1200px) {
-    .container {
-      width: 1000px;
-    } */
 .pagination {
   display: inline-block;
 }
@@ -166,8 +168,64 @@ span{
   width: 800px;
   height: 533px;
 }
-.footer-icon{
+
+.footer-icon {
   width: 50px;
-    float: left;
-    margin: 7px;
+  float: left;
+  margin: 7px;
+}
+
+@media (min-width: 470.98px) and (max-width: 767.98px) {
+
+  .food-row {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .food-column {
+    padding: 10px;
+    width: 100%;
+  }
+ 
+  .footer-section {
+    padding: 20px;
+  }
+
+  .footer-top {
+    padding-top: 16px;
+  }
+ 
+
+}
+@media (min-width: 764.98px) and (max-width: 990.98px) {
+  .food-img-size{
+    height:300px;
+    width:98%;
+  }
+}
+@media (min-width: 582.98px) and (max-width: 766.98px) {
+  .food-img-size{
+    height: 500px;
+    }
+}
+
+@media (min-width: 470px) and (max-width: 768px) {
+  .container{
+    width:94%;
+  }
+  .menu {
+    margin-left: -46%;
+    margin-right: -20%;
+  }
+}
+@media (min-width: 210.98px) and (max-width: 469.98px) {
+  .food-row {
+    display: flex;
+    flex-flow: column;
+  }
+  .food-column {
+    padding: 10px;
+    width: 100%;
+  }
+ 
 }
